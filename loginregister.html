@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Login And register Form - StayConnected</title>
+        <link rel="stylesheet" href="loginregister.css">
+    </head>
+    <body>
+        <div calss="hero">
+            <div class="form-box">
+                <div class="button-box">
+                   <div id="btn"></div> 
+                    <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+                </div>
+                <div class="social-icons">
+                    <img src="fb.png">
+                    <img src="gg.png">
+                    <img src="tw.png">
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn"><a href="index.html">Login</a></button>
+            </form>
+            <form id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder="User ID" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="chech-box"><span>Agree to all terms and conditions</span>
+                <button type="submit" class="submit-btn"><a href="index.html">Register</a></button>
+            </form>
+            </div>
+        </div>
+
+        <script>
+            var x = document.getElementById("Login");
+            var y = document.getElementById("Register");
+            var z = document.getElementById("btn");
+
+            function Register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function Login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+
+        </script>
+<script>
+    function login(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Perform authentication
+
+        // If authentication is successful, redirect to index.html
+        window.location.href = "index.html";
+    }
+
+    function register(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Perform registration
+
+        // If registration is successful, redirect to index.html
+        window.location.href = "index.html";
+    }
+</script>
+
+    </body>
+</html>

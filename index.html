@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StayConnected</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background: linear-gradient(to right, #FF6B6B, #FFD166);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .search-bar {
+            display: flex;
+        }
+
+        .search-bar input {
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        .search-bar button {
+            background-color: #FFF;
+            color: #FF6B6B;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .page {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .post {
+            background-color: #FFF;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            width: 60%;
+            max-width: 600px;
+        }
+
+        .post .user-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .post .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .post .user-info i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .post .user-info h3 {
+            margin: 0;
+        }
+
+        .post-content img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .profile-picture {
+            width: 30px;
+            /* Lebar foto profil */
+            height: 30px;
+            /* Tinggi foto profil */
+            object-fit: cover;
+            /* Menyesuaikan gambar agar tidak terdistorsi */
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .post .post-content p {
+            margin: 0;
+        }
+
+        .post .post-content .time {
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="StayConnected logo.png" alt="StayConnected Logo">
+            <h1>StayConnected</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="notification.html">Notifications</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <div id="homepage" class="page">
+        <!-- Social media posts -->
+        <div class="post">
+            <div class="user-info">
+                <img src="https://source.unsplash.com/random/400x400" alt="User Profile Picture"
+                    class="profile-picture">
+                <h3>FatCat_01</h3>
+            </div>
+            <div class="post-content">
+                <img src="https://images.squarespace-cdn.com/content/v1/54d2df57e4b0526a666a8958/1505434085459-MOYQ5LTRUGAM81LT2ONT/FullSizeRender+4.jpg"
+                    alt="Post Image">
+                <p>Getting fatter every day. #stayconnected</p>
+                <p>2 hours ago</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="user-info">
+                <img src="https://source.unsplash.com/random/400x400" alt="User Profile Picture"
+                    class="profile-picture">
+                <h3>DogHater_meow</h3>
+            </div>
+            <div class="post-content">
+                <img src="https://th.bing.com/th/id/OIP.d8RFW3t3adKL2R_X6pBJ2QHaG7?rs=1&pid=ImgDetMain"
+                    alt="Post Image">
+                <p>Home sweet home. #stayconnected</p>
+                <p class="time">1 hour ago</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="user-info">
+                <img src="https://source.unsplash.com/random/400x400" alt="User Profile Picture"
+                    class="profile-picture">
+                <h3>TubbyCat_02</h3>
+            </div>
+            <div class="post-content">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Red_Kitten_01.jpg" alt="Post Image">
+                <p>Back to when he wasn't tubby yet! #stayconnected</p>
+                <p class="time">1 hour ago</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="user-info">
+                <img src="https://source.unsplash.com/random/400x400" alt="User Profile Picture"
+                    class="profile-picture">
+                <h3>Not_a_Tubby_Cat</h3>
+            </div>
+            <div class="post-content">
+                <img src="https://th.bing.com/th/id/OIP.8UyYk_KXLNyqs5QUUGl--QHaET?w=900&h=523&rs=1&pid=ImgDetMain"
+                    alt="Post Image">
+                <p>Blue eyes, Blond hair, look at me I'am so sexy! #stayconnected</p>
+                <p class="time">1 hour ago</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="user-info">
+                <img src="https://source.unsplash.com/random/400x400" alt="User Profile Picture"
+                    class="profile-picture">
+                <h3>DogHater_meow</h3>
+            </div>
+            <div class="post-content">
+                <img src="https://th.bing.com/th/id/OIP.d8RFW3t3adKL2R_X6pBJ2QHaG7?rs=1&pid=ImgDetMain"
+                    alt="Post Image">
+                <p>Home sweet home. #stayconnected</p>
+                <p class="time">1 hour ago</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="user-info">
+                <img src="https://source.unsplash.com/random/400x400" alt="User Profile Picture"
+                    class="profile-picture">
+                <h3>AngryCat_03</h3>
+            </div>
+            <div class="post-content">
+                <img src="https://th.bing.com/th/id/OIP.VBFPLrVTzI1-LkaT39v9jgHaD9?w=860&h=460&rs=1&pid=ImgDetMain"
+                    alt="Post Image">
+                <p>Not angry, just hungry! #stayconnected</p>
+                <p class="time">1 hour ago</p>
+            </div>
+        </div>
+        <div class="post">
+            <div class="user-info">
+                <img src="https://source.unsplash.com/random/400x400" alt="User Profile Picture"
+                    class="profile-picture">
+                <h3>DogHater_meow</h3>
+            </div>
+            <div class="post-content">
+                <img src="https://th.bing.com/th/id/OIP.d8RFW3t3adKL2R_X6pBJ2QHaG7?rs=1&pid=ImgDetMain"
+                    alt="Post Image">
+                <p>Home sweet home. #stayconnected</p>
+                <p class="time">1 hour ago</p>
+            </div>
+        </div>
+        <!-- Add more random posts here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 StayConnected. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>

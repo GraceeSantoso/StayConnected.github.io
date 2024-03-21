@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 0px;
+        }
+
+        nav {
+            background: linear-gradient(to right, #FF6B6B, #FFD166);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .search-bar {
+            display: flex;
+        }
+
+        .search-bar input {
+            padding: 8px;
+            margin-right: 10px;
+        }
+
+        .search-bar button {
+            background-color: #FFF;
+            color: #FF6B6B;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        .page {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .profile-picture {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-picture img {
+            width: 200px;
+            /* Ubah lebar gambar profil */
+            height: 200px;
+            /* Ubah tinggi gambar profil */
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .profile-info {
+            text-align: center;
+        }
+
+        .profile-info h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .profile-info p {
+            color: #666;
+        }
+
+        .profile-info .edit-profile {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="StayConnected logo.png" alt="StayConnected Logo">
+            <h1>StayConnected</h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="notification.html">Notifications</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="profile">
+        <div class="profile-picture">
+            <img src="cute-golden-retriever.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>Not_a_Cat</h2>
+            <p>Email: woofwoof@gmail.com</p>
+            <p>Location: Yogyakarta, Indonesia</p>
+            <a href="#" class="edit-profile">Edit Profile</a>
+        </div>
+    </div>
+</body>
+
+</html>
